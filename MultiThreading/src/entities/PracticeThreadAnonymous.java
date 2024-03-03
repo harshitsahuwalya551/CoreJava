@@ -5,7 +5,7 @@ public class PracticeThreadAnonymous {
         Thread t = new Thread(){
             @Override
             public void run(){
-                System.out.println("Hi");
+                System.out.println("Hello");
             }
         };
         t.start();
