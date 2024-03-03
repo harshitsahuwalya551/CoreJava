@@ -1,0 +1,10 @@
+package entites;
+
+class LaunchInnerFromStaticARea{
+	class Inner{
+
+	}
+	public static void main(String[] args) {
+		 
+	}
+}

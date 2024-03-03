@@ -1,0 +1,15 @@
+package entities;
+import java.util.*;
+public class LaunchMap {
+	public static void main(String[] args) {
+		HashMap hm= new HashMap();
+		hm.put(10,"Sachin");
+		hm.put(7,"Dhoni");
+		hm.put(18,"Kohli");
+		hm.put(45,"Rohit");
+		System.out.println(hm);//hm.toString() will be called
+		
+		Set s = hm.keySet();
+		System.out.println(hm);
+	}
+}

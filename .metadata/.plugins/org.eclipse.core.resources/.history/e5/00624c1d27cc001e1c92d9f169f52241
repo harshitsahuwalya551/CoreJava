@@ -1,0 +1,32 @@
+package entities;
+import java.util.*;
+public class LaunchMap {
+	public static void main(String[] args) {
+		HashMap hm= new HashMap();
+		hm.put(10,"Sachin");
+		hm.put(7,"Dhoni");
+		hm.put(18,"Kohli");
+		hm.put(45,"Rohit");
+		System.out.println(hm);//hm.toString() will be called
+		
+		Set s = hm.keySet();//To get the key from map
+		System.out.println(s);
+		System.out.println(s.getClass().getName());
+		
+		Collection c = hm.values();//To get the value from map
+		System.out.println(c);
+		System.out.println(s.getClass().getName());
+		
+		Set mapData = hm.entrySet();//To get the K,V from the map
+		System.out.println(mapData);
+		System.out.println(mapData.getClass().getName());
+		
+		Iterator itr = mapData.iterator();
+		while(itr.hasNext()) {
+//			Map.Entry data = (Map.Entry)itr.next();
+//			System.out.println(data.getKey() + ":" + data.getValue());
+			System.out.println(itr);
+		}
+	}
+	
+}

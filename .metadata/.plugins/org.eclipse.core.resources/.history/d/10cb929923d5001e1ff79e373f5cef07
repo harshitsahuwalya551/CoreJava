@@ -1,0 +1,23 @@
+package entities;
+
+enum Result1{
+	PASS, FAIL, NR;
+	//public final static Resut1 PASS = new Result1();
+	Result1(){
+		System.out.println("");
+	}
+}
+
+public class LaunchSwitchEum {
+	public static void main(String[] args) {
+		Result1 result1 = Result1.PASS;
+		switch(result1) {
+		case PASS : System.out.println("PASSED");
+		break;
+		case FAIL : System.out.println("PASSED");
+		break;
+		case NR : System.out.println("PASSED");
+		break;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+package StringClass;
+
+public class capacity {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBuffer sc = new StringBuffer("njdjajnjanjanj");
+		System.out.println(sc.capacity());
+	}
+
+}
