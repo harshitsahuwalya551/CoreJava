@@ -102,7 +102,7 @@ public class demo {
 				if(j8==0||j8==n-1||i8==(n-1)/2)
 					System.out.print("*");
 				else
-					System.out.print(" ");
+					System.out.print(" ");	
 			}
 			System.out.println();
 		}

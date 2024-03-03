@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Relationship.Employee"/>
-    <fullyQualifiedTypeName name="entities.Department"/>
-    <fullyQualifiedTypeName name="entities.Employee"/>
-    <fullyQualifiedTypeName name="entities.Branch"/>
-    <fullyQualifiedTypeName name="entities.Student"/>
-    <fullyQualifiedTypeName name="entities.Placement"/>
-    <fullyQualifiedTypeName name="entities.myCal2"/>
-    <fullyQualifiedTypeName name="entities.Product"/>
-    <fullyQualifiedTypeName name="entities.Course"/>
     <fullyQualifiedTypeName name="entities.Student1"/>
     <fullyQualifiedTypeName name="java.util.Hashtable"/>
     <fullyQualifiedTypeName name="javax.management.openmbean.OpenMBeanAttributeInfoSupport"/>
@@ -56,4 +47,17 @@
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="entites.Outer12"/>
+    <fullyQualifiedTypeName name="entites.Outer12.Inner12"/>
+    <fullyQualifiedTypeName name="entites.RegularInnerClass.InnerClass"/>
+    <fullyQualifiedTypeName name="entites.RegularInnerClass"/>
+    <fullyQualifiedTypeName name="entites.CheckScopeOfRegularinnerClassVariable"/>
+    <fullyQualifiedTypeName name="entites.CheckScopeOfRegularinnerClassVariable.Inner13"/>
+    <fullyQualifiedTypeName name="entites.LaunchMethodLocalInnerClass"/>
+    <fullyQualifiedTypeName name="Inner14"/>
+    <fullyQualifiedTypeName name="Inner15"/>
+    <fullyQualifiedTypeName name="entites.PracticeMethodLocalInnerClass"/>
+    <fullyQualifiedTypeName name="Inner16"/>
+    <fullyQualifiedTypeName name="entites.Outer16"/>
+    <fullyQualifiedTypeName name="Inner17"/>
 </qualifiedTypeNameHistroy>
