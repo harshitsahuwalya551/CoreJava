@@ -1,0 +1,17 @@
+package entities;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Launch6{
+	public static void main(String args[])throws IOException{
+		FileWriter f = new FileWriter("abcd.txt");
+		f.write(71);
+		f.write("\n");
+		char[] ch = {'a','b','c','d'};
+		f.write(ch);
+		f.write("\nHi i am harshit Sahuwalya");
+		f.flush();
+		f.close();
+	}
+}
