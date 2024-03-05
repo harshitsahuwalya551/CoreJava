@@ -1,0 +1,36 @@
+import java.io.*;
+
+class Apple implements Serializable {
+	String name = "Red Apple";
+	int price = 100;
+}
+
+class Cat implements Serializable {
+	int i = 30;
+	int j = 50;
+}
+
+class Launch2 {
+	public static void main(String args[]) throws Exception {
+		Apple apple = new Apple();
+		Cat c = new Cat();
+		System.out.println("Serilazation Started");
+		FileOutputStream fos = new FileOutputStream("apple.sir");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		oos.writeObject(apple);
+		oos.writeObject(c);
+		System.out.println("Serilazation Ended");
+
+		System.out.println("De-Serilazation Started");
+		FileInputStream fir = new FileInputStream("apple.sir");
+		ObjectInputStream ois = new ObjectInputStream(fir);
+		Apple appleS = (Apple) ois.readObject();
+		Cat c1 = (Cat) ois.readObject();
+
+		System.out.println("De-Serilazation Ended");
+
+		System.out.println(appleS.name + "/n=======/n" + appleS.price);
+		System.out.println("i=" + c1.i + "====>j=" + c1.j);
+	}
+
+}
