@@ -4,7 +4,7 @@ import java.io.FileWriter;
 
 public class Launch14{
 	public static void main(String args[])throws IOException{
-		
+			
 		//try with resources
 		try(FileWriter fw = new FileWriter("new2.txt");PrintWriter pw = new PrintWriter(fw);){
 		pw.println(34);
