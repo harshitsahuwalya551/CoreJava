@@ -1,0 +1,33 @@
+import java.io.*;
+
+class Animal{
+	int i = 20;
+	Animal(){
+		System.out.println("This is animal class Constructor");
+	}
+}
+class Dog extends Animal implements Serializable {
+	int j = 10;
+	Dog(){
+		System.out.println("This is animal class Constructor");
+	}
+}
+public class InheratingSerialization1{
+	public static void main(String args[])throws Exception{
+		
+		Dog d = new Dog();
+		d.i=888;
+		d.j=999;
+
+		System.out.println("Serialization Started");
+		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("abc.ser"));
+		oos.writeObject(d);
+		System.out.println("Serialization Ended");
+
+		System.out.println("De-Serialization Started");
+		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("abc.ser"));
+		Dog d1 = (Dog)ois.readObject();
+		System.out.println("De-Serialization Ended");
+		System.out.println(d1.i+"======="+d1.j);
+	}
+}
