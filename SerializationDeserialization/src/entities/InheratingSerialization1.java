@@ -1,32 +1,39 @@
+package entities;
+
 import java.io.*;
 
-class Animal{
+class Animal {
 	int i = 20;
-	Animal(){
+
+	Animal() {
 		System.out.println("This is animal class Constructor");
 	}
 }
+
 class Dog extends Animal implements Serializable {
 	int j = 10;
-	Dog(){
+
+	Dog() {
 		System.out.println("This is Dog class Constructor");
 	}
 }
-public class InheratingSerialization1{
-	public static void main(String args[])throws Exception{
-		
+
+public class InheratingSerialization1 {
+	public static void main(String args[]) throws Exception {
+
 		Dog d = new Dog();
-		d.i=888;
-		d.j=999;
+		d.i = 888;
+		d.j = 999;
 
 		System.out.println("Serialization Started");
-		new ObjectOutputStream(new FileOutputStream("abc.ser")).writeObject(d);;	
+		new ObjectOutputStream(new FileOutputStream("abc.ser")).writeObject(d);
+
 		System.out.println("Serialization Ended");
 
 		System.out.println("De-Serialization Started");
 		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("abc.ser"));
-		Dog d1 = (Dog)ois.readObject();
+		Dog d1 = (Dog) ois.readObject();
 		System.out.println("De-Serialization Ended");
-		System.out.println(d1.i+"======="+d1.j);
+		System.out.println(d1.i + "=======" + d1.j);
 	}
 }
