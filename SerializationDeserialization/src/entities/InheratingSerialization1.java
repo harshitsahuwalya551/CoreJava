@@ -20,8 +20,7 @@ public class InheratingSerialization1{
 		d.j=999;
 
 		System.out.println("Serialization Started");
-		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("abc.ser"));
-		oos.writeObject(d);
+		new ObjectOutputStream(new FileOutputStream("abc.ser")).writeObject(d);;	
 		System.out.println("Serialization Ended");
 
 		System.out.println("De-Serialization Started");
